@@ -26,8 +26,12 @@ p6df::modules::terraform::init() {
     alias tg=terragrunt
 }
 
-p6df::prompt::terraform::line() {}
+p6df::prompt::terraform::line() {
 
+    if [ -d .terraform ]; then
+	echo "terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
+    fi
+}
 
 p6_terraform_workspace_show() {
 
@@ -38,7 +42,7 @@ p6_terraform_workspace_tfvar_file() {
 
     local ws=$(terraform workspace show)
 
-    echo ./tfvara/${ws}.tfvars
+    p6_return "./tfvars/${ws}.tfvars"
 }
 
 p6_terraform_validate() {
