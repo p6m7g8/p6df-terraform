@@ -43,7 +43,7 @@ p6_terraform_workspace_tfvar_file() {
 
     local ws=$(terraform workspace show)
 
-    p6_return "./tfvars/${ws}.tfvars"
+    p6_return_path "./tfvars/${ws}.tfvars"
 }
 
 p6_terraform_validate() {
