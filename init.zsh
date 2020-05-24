@@ -29,9 +29,12 @@ p6df::modules::terraform::init() {
 
 p6df::prompt::terraform::line() {
 
+    local str
     if [ -d .terraform ]; then
-	echo "terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
+	str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
     fi
+
+    p6_return_str "$str"
 }
 
 p6_terraform_workspace_show() {
