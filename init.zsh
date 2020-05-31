@@ -29,12 +29,14 @@ p6df::modules::terraform::init() {
 
 p6df::prompt::terraform::line() {
 
-    if [ -d .terraform ]; then
-	local str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
-	p6_return_str "$str"
+    local str
+     if [ -d .terraform ]; then
+       str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
+       local str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
+       p6_return_str "$str"
     else
-	p6_return_void
-    fi
+       p6_return_void
+     fi
 }
 
 p6_terraform_workspace_show() {
