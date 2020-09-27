@@ -13,7 +13,7 @@ p6df::modules::terraform::version() { echo "0.0.1" }
 #
 #>
 ######################################################################
-p6df::modules::terraform::deps() { ModuleDeps=( robbyrussell/oh-my-zsh:plugins/terraform ) }
+p6df::modules::terraform::deps() { ModuleDeps=( ohmyzsh/ohmyzsh:plugins/terraform ) }
 
 ######################################################################
 #<
@@ -24,7 +24,8 @@ p6df::modules::terraform::deps() { ModuleDeps=( robbyrussell/oh-my-zsh:plugins/t
 ######################################################################
 p6df::modules::terraform::external::brew() {
 
-    brew install terraform
+    brew install hashicorp/tap/terraform
+
     brew install terraform-inventory
     brew install terraform-provisioner-ansible
     brew install terraform-docs
@@ -33,7 +34,6 @@ p6df::modules::terraform::external::brew() {
     brew install terraforming
     brew install terragrunt
 
-    brew install terraform@0.11
 }
 
 ######################################################################
