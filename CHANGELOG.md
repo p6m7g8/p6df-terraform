@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/p6m7g8/p6df-terraform/compare/v1.0.1...v2.0.0) (2020-10-11)
+
+
+### Features
+
+* **taps:** move to hashiecorp tap ([#6](https://github.com/p6m7g8/p6df-terraform/issues/6)) ([8a2889a](https://github.com/p6m7g8/p6df-terraform/commit/8a2889a56f814023a1fd26f4940173a250522ed9))
+
+
+### Bug Fixes
+
+* **prompt:** standardize prompt, fix depends ([#7](https://github.com/p6m7g8/p6df-terraform/issues/7)) ([4dfb33c](https://github.com/p6m7g8/p6df-terraform/commit/4dfb33c94f1ac964e4a2a0387cd43d25876fbd43))
+
 ### [1.0.1](https://github.com/p6m7g8/p6df-terraform/compare/v1.0.0...v1.0.1) (2020-09-20)
 
 ## 1.0.0 (2020-06-07)
