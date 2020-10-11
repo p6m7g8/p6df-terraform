@@ -6,6 +6,7 @@
 #>
 ######################################################################
 p6df::modules::terraform::version() { echo "0.0.1" }
+
 ######################################################################
 #<
 #
@@ -13,7 +14,12 @@ p6df::modules::terraform::version() { echo "0.0.1" }
 #
 #>
 ######################################################################
-p6df::modules::terraform::deps() { ModuleDeps=( ohmyzsh/ohmyzsh:plugins/terraform ) }
+p6df::modules::terraform::deps() {
+    ModuleDeps=(
+        p6m7g8/p6df-go
+        ohmyzsh/ohmyzsh:plugins/terraform
+    )
+}
 
 ######################################################################
 #<
@@ -33,7 +39,6 @@ p6df::modules::terraform::external::brew() {
     brew install terraformer
     brew install terraforming
     brew install terragrunt
-
 }
 
 ######################################################################
@@ -65,23 +70,13 @@ p6df::modules::terraform::init() {
 ######################################################################
 #<
 #
-# Function: str str = p6df::prompt::terraform::line()
-#
-#  Returns:
-#	str - str
+# Function: p6df::modules::terraform::prompt::line()
 #
 #>
 ######################################################################
-p6df::prompt::terraform::line() {
+p6df::modules::terraform::prompt::line() {
 
-    local str
-     if [ -d .terraform ]; then
-       str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
-       local str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
-       p6_return_str "$str"
-    else
-       p6_return_void
-     fi
+  p6_terraform_prompt_info
 }
 
 ######################################################################
@@ -171,4 +166,26 @@ p6_terraform_console() {
 p6_terraform_destroy() {
 
     terraform destroy -var-file=$(p6_terraform_workspace_tfvar_file)
+}
+
+######################################################################
+#<
+#
+# Function: str str = p6_terraform_prompt_info()
+#
+#  Returns:
+#	str - str
+#
+#>
+######################################################################
+p6_terraform_prompt_info() {
+
+    local str
+     if [ -d .terraform ]; then
+       str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
+       local str="terraform: $(p6_terraform_workspace_show)#$(p6_terraform_workspace_tfvar_file)"
+       p6_return_str "$str"
+    else
+       p6_return_void
+     fi
 }
