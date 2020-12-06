@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/p6m7g8/p6df-terraform/compare/v2.0.0...v2.1.0) (2020-12-06)
+
+
+### Features
+
+* **api:** centralize ::version() ([703dddd](https://github.com/p6m7g8/p6df-terraform/commit/703dddd11c2d5eb6c737fabe5cdaa5cb1d6f5f12))
+* **community:** adds CODE_OF_CONDUCT ([b9a3aea](https://github.com/p6m7g8/p6df-terraform/commit/b9a3aea69f086d7b4eb098dea8d9f281ceef45d2))
+* **github:** adds ISSUE_TEMPLATEs ([e83ece8](https://github.com/p6m7g8/p6df-terraform/commit/e83ece8bd89557b7287d43c92e25bcd6b2b2e747))
+
+
+### Bug Fixes
+
+* **prompt:** str only one time ([#16](https://github.com/p6m7g8/p6df-terraform/issues/16)) ([d30c7b7](https://github.com/p6m7g8/p6df-terraform/commit/d30c7b75a0d3578f0dba07cc3f6aa099151b5c5d))
+
+
+* **community:** rely on the .github/ in the org ([#14](https://github.com/p6m7g8/p6df-terraform/issues/14)) ([ae61f3b](https://github.com/p6m7g8/p6df-terraform/commit/ae61f3b6e17f42e9e99cd17f1936c05384a651b2))
+* **README:** fixes module expansion, adds CodeCov and Synk badges ([#15](https://github.com/p6m7g8/p6df-terraform/issues/15)) ([dc7d2f3](https://github.com/p6m7g8/p6df-terraform/commit/dc7d2f3b542aeb694a12653b822e3db2cbd8468e))
+* **README:** updates to template v2.0 ([1ff0da7](https://github.com/p6m7g8/p6df-terraform/commit/1ff0da7d75ffbd18859344ee2267c3cb9453fb21))
+* **semantic:** no longer needed, defaults are fine ([cdc511a](https://github.com/p6m7g8/p6df-terraform/commit/cdc511a93f4fb62b6b1147a5081039a4bc90bb5e))
+
 ## [2.0.0](https://github.com/p6m7g8/p6df-terraform/compare/v1.0.1...v2.0.0) (2020-10-11)
 
 
