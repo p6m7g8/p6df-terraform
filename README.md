@@ -38,9 +38,11 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6df-terraform:
+
+#### p6df-terraform/init.zsh:
 
 - p6_terraform_apply()
 - p6_terraform_console()
