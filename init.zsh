@@ -41,7 +41,8 @@ p6df::modules::terraform::external::brew() {
 ######################################################################
 p6df::modules::terraform::home::symlink() {
 
-    ln -fs $P6_DFZ_P6M7G8_DIR/p6-terraform/share/.terraformrc $HOME/.terraformrc
+    echo ln -fs $P6_DFZ_P6M7G8_SRC_DIR/p6-terraform/share/.terraformrc $HOME/.terraformrc
+#    ln -fs $P6_DFZ_P6M7G8_SRC_DIR/p6-terraform/share/.terraformrc $HOME/.terraformrc
 }
 
 ######################################################################
