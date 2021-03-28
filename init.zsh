@@ -15,6 +15,19 @@ p6df::modules::terraform::deps() {
 ######################################################################
 #<
 #
+# Function: p6df::modules::terraform::vscodes()
+#
+#>
+######################################################################
+p6df::modules::terraform::vscodes() {
+
+    # terrafrom
+    code --install-extension hashicorp.terraform
+}
+
+######################################################################
+#<
+#
 # Function: p6df::modules::terraform::external::brew()
 #
 #>
@@ -37,6 +50,7 @@ p6df::modules::terraform::external::brew() {
 #
 # Function: p6df::modules::terraform::home::symlink()
 #
+#  Environment:	 P6_DFZ_P6M7G8_DIR
 #>
 ######################################################################
 p6df::modules::terraform::home::symlink() {
