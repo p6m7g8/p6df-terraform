@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6df-terraform/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+* **README:** updates generator ([#17](https://github.com/p6m7g8/p6df-terraform/issues/17)) ([37a3b1a](https://github.com/p6m7g8/p6df-terraform/commit/37a3b1aa6e4b2c8d612718a2b39e517e41f9a2d8))
+* **vscode:** splits vscode extensions to their languages ([#18](https://github.com/p6m7g8/p6df-terraform/issues/18)) ([99a3098](https://github.com/p6m7g8/p6df-terraform/commit/99a3098d5d823655e1a3d61d17d3694d37f481b4))
+* Coc -> .github ([1f0b9b4](https://github.com/p6m7g8/p6df-terraform/commit/1f0b9b40ca2657ca79c7ad952eb4e2205c27a9b5))
+
 ## [2.1.0](https://github.com/p6m7g8/p6df-terraform/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
